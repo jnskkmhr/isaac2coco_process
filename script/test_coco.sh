@@ -1,5 +1,6 @@
 #!/bin/bash
+DATA_ROOT=$1
 
 python3 test/test_coco_conversion.py \
-    --root_dirs $(ls -d /home/lunar4/jnskkmhr/Lunalab_/Lunalab_standalone/data/*) \
-    --save_dir /home/lunar4/jnskkmhr/Lunalab_/Lunalab_standalone/data \
+    --root_dirs $(ls -d $DATA_ROOT/*) \
+    --save_dir $DATA_ROOT \
